@@ -9,3 +9,5 @@ Utilize the Provider, and connect functions in the process.  Work with mapStateT
 In this application we will be building an application to keep track of our favorite restaurants.  We will keep our react application separated from our redux application by using the provider and the connect functions.  We will not include a reference to the store in any component except for the provider.  
 
 ## Instructions
+
+Use both the mapStateToProps method and the mapDispatchToProps from the redux library to both update the store and render data from the store.  
