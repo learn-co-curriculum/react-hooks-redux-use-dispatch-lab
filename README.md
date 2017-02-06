@@ -1,8 +1,8 @@
-# Provider/MapStateToProps Lab
+# mapDispatchToProps Lab
 
 ## Objectives
 Use the react-redux library to connect the store to the react application.  
-Utilize the Provider, and connect functions in the process.  Work with mapStateToProps and mapDispatchToProps.
+Utilize the Provider, and connect functions in the process.  Work with  mapDispatchToProps.
 
 ## Overview
 
@@ -10,4 +10,4 @@ In this application we will be building an application to keep track of our favo
 
 ## Instructions
 
-Use both the mapStateToProps method and the mapDispatchToProps from the redux library to both update the store and render data from the store.  
+Use the mapDispatchToProps from the redux library to update the store.  First pass through a reference to the action creator as a prop, then use the redux library to ensure that an action is dispatched when a form is submitted.
