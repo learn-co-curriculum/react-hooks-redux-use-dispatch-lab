@@ -1,25 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App'
-import { Provider } from 'react-redux'
-
-
-import { createStore } from 'redux'
-import manageRestaurants from './reducers/manageRestaurants'
-// function(){}
+import App from './App';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import manageRestaurants from './reducers/manageRestaurants';
 
 // we wrap store in a function for testing purposes
-export function configureStore(){
+export const configureStore = () => {
   return createStore(manageRestaurants, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 }
 
-let store = configureStore()
+const store = configureStore();
 
 ReactDOM.render(
   <Provider store={store}>
     <App store={store}/>
-  </Provider>
-    ,
-    document.getElementById('root')
-
+  </Provider>,
+  document.getElementById('root')
 );

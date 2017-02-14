@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { ConnectedRestaurantInput } from './components/RestaurantInput'
-import { ConnectedRestaurants } from './components/Restaurants'
+import { ConnectedRestaurantInput } from './components/RestaurantInput';
+import { ConnectedRestaurants } from './components/Restaurants';
 
 export class App extends Component {
   render() {
@@ -11,6 +11,6 @@ export class App extends Component {
       </div>
     );
   }
-}
+};
 
 export default App;

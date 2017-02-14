@@ -11,4 +11,4 @@ In this application we will be building an application to keep track of our favo
 
 ## Instructions
 
-Use the __mapDispatchToProps()__ from the __Redux__ library to update the store. First pass through a reference to the action creator as a prop, then use the __Redux__ library to ensure that an action is dispatched when a form is submitted.
+What we want to do here is use the __bindActionCreators()__ function from the __Redux__ library and and pass dispatch into our __mapDispatchToProps()__ function so that we can __connect()__ the __addRestaurant()__ function as a props to our __RestaurantInput__ component. 

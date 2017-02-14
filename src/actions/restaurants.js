@@ -1,3 +1,6 @@
-export function addRestaurant(restaurant){
-  return {type: 'ADD_RESTAURANT', payload: restaurant}
-}
+export const addRestaurant = (restaurant) => {
+  return {
+    type: 'ADD_RESTAURANT', 
+    restaurant
+  };
+};
