@@ -1,5 +1,5 @@
 {
-  "name": "5-building-forms-lab",
+  "name": "map-dispatch-to-props-lab",
   "version": "0.1.0",
   "private": true,
   "babel": {
@@ -13,8 +13,6 @@
   "devDependencies": {
     "jsdom": "9.2.1",
     "mocha": "^5.2.0",
-    "react-scripts": "^1.1.4",
-    "webpack": "^4.16.2",
     "webpack-dev-server": "^3.1.5"
   },
   "dependencies": {
@@ -31,8 +29,10 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.2",
+    "react-scripts": "1.1.4",
     "redux": "^4.0.0",
-    "sinon": "^6.1.4"
+    "sinon": "^6.1.4",
+    "webpack": "^3.11.0"
   },
   "scripts": {
     "start": "react-scripts start",
