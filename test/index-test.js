@@ -1,12 +1,15 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
-import { shallow, mount } from 'enzyme';
+import { configure, shallow, mount } from 'enzyme';
 import React from 'react';
 import { ConnectedRestaurantInput, RestaurantInput } from '../src/components/RestaurantInput';
 import { configureStore } from '../src/index.js';
 import { Provider } from 'react-redux';
 import App from '../src/App';
 import { ConnectedRestaurants, Restaurants }  from '../src/components/Restaurants';
+import Adapter from 'enzyme-adapter-react-16'
+
+configure({ adapter: new Adapter() })
 
 describe('restaurants input', () => {
   it('has an add restaurant type', () => {
