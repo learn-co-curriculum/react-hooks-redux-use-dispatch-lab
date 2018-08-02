@@ -4,44 +4,37 @@ import { connect } from 'react-redux';
 
 export class RestaurantInput extends Component {
 
-  constructor(props){
-    super(props);
-
-    this.state = {
-      name: '', location: ''
-    };
+  state = {
+    name: '',
+    location: ''
   }
 
-  handleOnNameChange(event) {
+  handleInputChange(event) {
     this.setState({
-      name: event.target.value
-    });
-  }
-
-  handleOnLocationChange(event) {
-    this.setState({
-      location: event.target.value
+      [event.target.id]: event.target.value
     });
   }
 
   handleOnSubmit(event) {
     event.preventDefault();
-    this.props.addRestaurant(this.state);
+    // add
   }
 
   render() {
     return(
       <form onSubmit={(event) => this.handleOnSubmit(event)}>
         <p>
-          <input 
-            type="text" 
-            onChange={(event) => this.handleOnNameChange(event)} 
+          <input
+            type="text"
+            onChange={(event) => this.handleOnNameChange(event)}
+            id="name"
             placeholder="restaurant name" />
         </p>
         <p>
-          <input 
-            type="text" 
-            onChange={(event) => this.handleOnLocationChange(event)} 
+          <input
+            type="text"
+            onChange={(event) => this.handleOnLocationChange(event)}
+            id="location"
             placeholder="location" />
         </p>
         <input type="submit" />
@@ -50,4 +43,5 @@ export class RestaurantInput extends Component {
   }
 };
 
-export const ConnectedRestaurantInput = connect(null, null)(RestaurantInput)
+//connect this component by wrapping RestaurantInput below
+export default RestaurantInput

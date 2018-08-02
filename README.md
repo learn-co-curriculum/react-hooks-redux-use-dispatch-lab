@@ -16,7 +16,9 @@ for the __Provider__.
 
 ## Instructions
 
-What we want to do here is use the __bindActionCreators()__ function from the
-__Redux__ library and and pass dispatch into our __mapDispatchToProps()__
-function so that we can __connect()__ the __addRestaurant()__ function as a
-props to our __RestaurantInput__ component. 
+What we want to do here is write a __mapDispatchToProps()__ function that allows
+us to pass dispatched actions as props. Remember that __mapDispatchToProps()__
+is provided `dispatch` as an argument (passed in by `connect` when called), so
+we can wrap an imported action with `dispatch` within __mapDispatchToProps()__.
+Don't forget that the action provided in `actions/restaurants.js` is a function
+that must be called to return an object.

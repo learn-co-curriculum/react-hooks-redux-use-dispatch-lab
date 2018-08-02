@@ -44,6 +44,7 @@ describe('restaurants input', () => {
         < ConnectedRestaurantInput />
       </Provider>
     );
+    
     let WrapperConnectedRestaurantInput = wrapper.find(ConnectedRestaurantInput).first();
     let WrapperRestaurantInput = wrapper.find(RestaurantInput).first();
     let restaurantNameInput = wrapper.find('input').first();

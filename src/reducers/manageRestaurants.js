@@ -4,9 +4,10 @@ export default function manageRestaurants(state = {
   switch (action.type) {
 
     case 'ADD_RESTAURANT':
-      return Object.assign({}, state, {
-        restaurants: state.restaurants.concat(action.restaurant)
-      });
+      return {
+        ...state,
+        restaurants: [...state.restaurants, action.restaurant]
+      }
 
     default:
       return state;
