@@ -1,5 +1,5 @@
 {
-  "name": "5-building-forms-lab",
+  "name": "map-dispatch-to-props-lab",
   "version": "0.1.0",
   "private": true,
   "babel": {
@@ -32,7 +32,7 @@
     "react-redux": "^5.0.2",
     "redux": "^4.0.0",
     "sinon": "^6.1.4",
-    "webpack": "^3.11.0"
+    "webpack": "^3.61.0"
   },
   "scripts": {
     "start": "react-scripts start",

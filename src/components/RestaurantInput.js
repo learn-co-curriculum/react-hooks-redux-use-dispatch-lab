@@ -9,15 +9,21 @@ export class RestaurantInput extends Component {
     location: ''
   }
 
-  handleInputChange(event) {
+  handleOnNameChange = event => {
+    this.setState({
+      name: event.target.value
+    });
+  }
+
+  handleOnLocationChange = event => {
     this.setState({
       [event.target.id]: event.target.value
     });
   }
 
-  handleOnSubmit(event) {
+  handleOnSubmit = event => {
     event.preventDefault();
-    // add
+    // add missing code
   }
 
   render() {
@@ -42,6 +48,7 @@ export class RestaurantInput extends Component {
     );
   }
 };
+
 
 //connect this component by wrapping RestaurantInput below
 export default RestaurantInput
