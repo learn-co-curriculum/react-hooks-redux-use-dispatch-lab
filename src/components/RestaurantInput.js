@@ -4,27 +4,24 @@ import { connect } from 'react-redux';
 
 export class RestaurantInput extends Component {
 
-  constructor(props){
-    super(props);
-
-    this.state = {
-      name: '', location: ''
-    };
+  state = {
+    name: '',
+    location: ''
   }
 
-  handleOnNameChange(event) {
+  handleOnNameChange = event => {
     this.setState({
       name: event.target.value
     });
   }
 
-  handleOnLocationChange(event) {
+  handleOnLocationChange = event => {
     this.setState({
       location: event.target.value
     });
   }
 
-  handleOnSubmit(event) {
+  handleOnSubmit = event => {
     event.preventDefault();
     this.props.addRestaurant(this.state);
   }
@@ -50,4 +47,4 @@ export class RestaurantInput extends Component {
   }
 };
 
-export const ConnectedRestaurantInput = connect(null, { addRestaurant })(RestaurantInput);
+export default connect(null, { addRestaurant })(RestaurantInput);

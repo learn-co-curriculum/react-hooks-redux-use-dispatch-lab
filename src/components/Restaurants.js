@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-export class Restaurants extends Component {
+class Restaurants extends Component {
 
   render() {
 
@@ -17,8 +17,8 @@ export class Restaurants extends Component {
   }
 };
 
-function mapStateToProps(state){
-  return {restaurants: state.restaurants}
+const mapStateToProps = state => {
+  return { restaurants: state.restaurants }
 }
 
-export const ConnectedRestaurants = connect(mapStateToProps)(Restaurants);
+export default connect(mapStateToProps)(Restaurants);
