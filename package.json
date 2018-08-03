@@ -32,7 +32,7 @@
     "react-redux": "^5.0.2",
     "redux": "^4.0.0",
     "sinon": "^6.1.4",
-    "webpack": "^3.61.0"
+    "webpack": "^3.6.0"
   },
   "scripts": {
     "start": "react-scripts start",
