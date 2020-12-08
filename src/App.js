@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
-import RestaurantInput from './components/RestaurantInput';
-import Restaurants from './components/Restaurants';
+import React from "react";
+import RestaurantInput from "./features/restaurant/RestaurantInput";
+import Restaurants from "./features/restaurant/Restaurants";
 
-export class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <RestaurantInput />
-        <Restaurants />
-      </div>
-    );
-  }
-};
+function App() {
+  return (
+    <div>
+      <RestaurantInput />
+      <Restaurants />
+    </div>
+  );
+}
 
 export default App;
