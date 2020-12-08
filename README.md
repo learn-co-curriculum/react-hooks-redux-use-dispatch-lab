@@ -1,4 +1,4 @@
-# Using the useDispatch Hook Readme Lab
+# Using the useDispatch Hook Lab
 
 ## Objectives
 
