@@ -23,7 +23,7 @@ describe("RestaurantsInput", () => {
     );
   });
 
-  it("is connected to the store", () => {
+  it("updates the store when the form is submitted", () => {
     expect(store.getState().restaurants.length).to.equal(0);
 
     let form = wrapper.find("form").first();
@@ -32,7 +32,7 @@ describe("RestaurantsInput", () => {
     expect(store.getState().restaurants.length).to.equal(1);
   });
 
-  it("updates the store when the form is submitted", () => {
+  it("uses the values from the form to update the store", () => {
     expect(store.getState().restaurants.length).to.equal(0);
 
     let restaurantNameInput = wrapper.find("input").first();
