@@ -36,7 +36,7 @@ function RestaurantInput() {
           placeholder="location"
         />
       </p>
-      <input type="submit" />
+      <button type="submit">Submit</button>
     </form>
   );
 }
