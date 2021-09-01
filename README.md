@@ -1,16 +1,18 @@
 # Using the useDispatch Hook Lab
 
-## Objectives
+## Learning Goals
 
-Use the `react-redux` library to connect the store to our `react`
-application. Utilize the `Provider` component to give your components access
-to the Redux store. Make sure to also implement `useDispatch()`.
+- Dispatch an action using the `useDispatch` hook
 
 ## Overview
 
 In this application we will be building an application to keep track of our
 favorite restaurants. We will keep our `react` application separated from our
 `redux` store by using the `Provider` component.
+
+Use the `react-redux` library to connect the store to our `react`
+application. Utilize the `Provider` component to give your components access
+to the Redux store. Make sure to also implement `useDispatch()`.
 
 ## Instructions
 
